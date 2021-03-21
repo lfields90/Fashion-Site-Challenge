@@ -1,6 +1,6 @@
 # Fashion Site - Frontend Development Practice
 
-![Design preview for the Fashion Site coding challenge](/design/AlternateFinal1.png)
+![Design preview for the Fashion Site coding challenge](/design/NamelazzFinal1.png)
 ## Welcome! 👋
 
 **Hi, my name is LaMonte and thanks for checking out this front-end coding challenge.**
