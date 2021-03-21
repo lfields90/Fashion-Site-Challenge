@@ -1,0 +1,168 @@
+/* Global Styles */
+
+:root {
+  --tan: hsla(40, 29%, 92%, 1);
+  --cacao: hsla(43, 59%, 12%, 1);
+  --lightCacao: hsla(43, 59%, 12%, 0.6);
+  --fontSize: 14px;
+  --displaySerif: 'Cormorant Garamond', serif;
+  --sansSerif: 'Monserrat', sans-serif;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--cacao);
+  font-family: var(--displaySerif);
+  font-size: var(--fontSize);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 0.9;
+  margin: 10% 0 5%;
+}
+
+h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+}
+
+h2, h3 {
+  font-family: var(--sansSerif);
+  font-weight: 400;
+}
+
+h3 {
+  text-align: right;
+  font-size: 1rem;
+}
+
+/* Main Styles */
+
+main {
+  background-image: url(../images/namelazz-hero.jpeg);
+  background-repeat: repeat-x;
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styles */
+
+.container {
+  width: 80%;
+  height: 70%;
+  background-color: var(--tan);
+  display: flex;
+}
+
+.item-intro {
+  flex: 1;
+  padding: 2rem;
+}
+
+.item-display {
+  padding: 2rem;
+  flex: 1;
+  background-image:  url(../images/grain4.png), url(../images/namelazz-medium.jpeg);
+  background-position: center;
+  background-size: auto, cover;
+}
+
+.detail-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+.detail-image {
+  flex: 1 15%;
+  background-image: url(../images/namelazz-detail.jpeg);
+  background-position: center;
+  /* background-size: contain; */
+}
+
+.detail-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.detail-info {
+  flex: 2 ;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.detail-info p.description, .detail-info p.sizing {
+  font-family: var(--sansSerif);
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.detail-info p.description {
+  padding-bottom: 10%;
+}
+
+.detail-info p.sizing {
+  line-height: 2;
+  color: var(--lightCacao);
+}
+
+.detail-info p.price {
+  margin-top: auto;
+  font-size: 1.8rem;
+}
+
+.add-to-cart {
+  border: 1px solid var(--cacao);
+  margin: 20px 0;
+  display: flex;
+  height: 60px;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 0.9;
+  text-align: center;
+  padding: 5px;
+}
+
+.amount {
+  flex: 1;
+  display: flex;
+  padding-right: 5px;
+}
+
+.amount p {
+  flex: 1;
+}
+
+.amount p.num {
+  flex: 2;
+}
+
+.add-to-cart-button {
+  flex: 5;
+  border-left: 1px solid var(--cacao);
+  text-align: right;
+}
+
+.add-to-cart-button p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 12px 10px 0 0;
+}
